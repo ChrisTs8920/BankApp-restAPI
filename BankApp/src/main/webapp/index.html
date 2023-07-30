@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank application endpoints</title>
+</head>
+<body style="background-color: gray;">
+<h3>Through browser:</h3>
+<ul>
+    <li><a href="./addAccount.html">Create new account.</a></li>
+    <li><a href="api/bankService/allAccounts_xml">View all accounts (xml format)</a></li>
+    <li><a href="api/bankService/allAccounts_json">View all accounts (json format)</a></li>
+    <li><p><b>Using this link you can view an account based on id (xml format):</b>
+        http://localhost:8080/war_exploded/api/bankService/allAccounts_xml/{aid}</p></li>
+    <li><p><b>Using this link you can view an account based on id (json format):</b>
+        http://localhost:8080/war_exploded/api/bankService/allAccounts_json/{aid}</p></li>
+</ul>
+<h3>Through Postman:</h3>
+<ul>
+    <li><p><b>Deposit in account:</b>
+        PUT http://localhost:8080/war_exploded/api/bankService/deposit/{aid}</p></li>
+    <li><p><b>Withdraw from account:</b>
+        PUT http://localhost:8080/war_exploded/api/bankService/withdraw/{aid}</p></li>
+    <li><p><b>Transfer from account to account:</b>
+        PUT http://localhost:8080/war_exploded/api/bankService/transferBalance/{aid}?aid2={aid}&amount={amount}</p></li>
+    <li><p><b>Activate/Deactivate account:</b>
+        PUT http://localhost:8080/war_exploded/api/bankService/updateAccountStatus/{aid}/{status}</p></li>
+    <li><p><b>Delete account:</b>
+        DELETE http://localhost:8080/war_exploded/api/bankService/delete/{aid}</p></li>
+</ul>
+<p><b>Info: Replace placeholders in {} with the corresponding value.<br>
+Example: Replace {aid} with an existing id.<br></b></p>
+</body>
+</html>

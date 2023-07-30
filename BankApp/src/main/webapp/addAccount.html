@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New account</title>
+</head>
+<body style="background-color: gray;">
+<h3>Add account</h3>
+<form action="api/bankService/addUser" method="post">
+    <label for="name">First name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="surname">Last name:</label><br>
+    <input type="text" id="surname" name="surname" required><br>
+
+    <label for="contactPhone">Phone number:</label><br>
+    <input type="text" id="contactPhone" name="contactPhone" required><br>
+
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address" required><br>
+
+    <input type="submit" value="Submit">
+</form>
+<p><b>Info: Your account will start with 0 balance, and it will be activated by default.<br>
+Later you will be able to deposit balance and deactivate it.</b></p>
+</body>
+</html>
