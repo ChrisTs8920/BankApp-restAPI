@@ -2,7 +2,7 @@
 
 ## Description
 
-An application of remote management of bank accounts. It was made using Java, Jakarta RESTful web services (JAX-RS API, Jersey implementation), MySQL (and JDBC API), IntelliJ IDEA Ultimate and Glassfish 6.2.4.  
+An application for remote management of bank accounts. It was made using Java, Jakarta RESTful web services (JAX-RS API, Jersey implementation), MySQL (and JDBC API), IntelliJ IDEA Ultimate and Glassfish 6.2.4.  
 
 **Tested using Mozilla Firefox and Postman.**
 
