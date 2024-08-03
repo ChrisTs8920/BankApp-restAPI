@@ -4,9 +4,9 @@
 
 An application for remote management of bank accounts. It was made using Java, Jakarta RESTful web services (JAX-RS API, Jersey implementation), MySQL (and JDBC API), IntelliJ IDEA Ultimate and Glassfish 6.2.4.  
 
-**Tested using Mozilla Firefox and Postman.**
+>**Tested using Mozilla Firefox and Postman.**
 
-*This project was made during my Network programming course in University.*
+>*This project was made during my Network programming course in University.*
 
 ### The application offers the following actions
 
@@ -19,7 +19,7 @@ An application for remote management of bank accounts. It was made using Java, J
 7. View details of all accounts (XML/JSON)
 8. Delete account
 
-**For simplicity, we assume that the user can execute the above actions to any account simply by knowing the Account ID. (i.e without requiring any kind of authentication).**
+>**For simplicity, we assume that the user can execute the above actions to any account simply by knowing the Account ID. (i.e without requiring any kind of authentication).**
 
 ### Endpoints
 
@@ -43,9 +43,9 @@ An application for remote management of bank accounts. It was made using Java, J
 
 8. ```http://localhost:8080/BankApp-1.0-SNAPSHOT/api/bankService/delete/<aid>```
 
-*Where `<aid>` insert the appropriate account id, and `<amount>` insert the appropriate amount.*
+>*Where `<aid>` insert the appropriate account id, and `<amount>` insert the appropriate amount.*
 
-*`<status>` is either activate or deactivate.*
+>*`<status>` is either activate or deactivate.*
 
 ### Database
 
@@ -59,7 +59,7 @@ The sql file creates the database **bank_accs** which contains the following tab
 | 13 | IWANNHS | IWANNOY | 6977775569 | Street 107 | 10 | 1 |
 | 14 | GIWRGOS | GIWRGOY | 6966665544 | Street 21 | 1000 | 1 |
 
-**The database also creates a user named 'TSOUCHLAKIS' with password '1234', with all privileges granted. This user is required for the JDBC API to connect with the database.**
+>**The database also creates a user named 'TSOUCHLAKIS' with password '1234', with all privileges granted. This user is required for the JDBC API to connect with the database.**
 
 ## Requirements
 
